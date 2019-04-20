@@ -1,0 +1,17 @@
+RData <- function() {
+dataIn <- read.csv("review.data") #idk if this even works
+dataIn <- dataIn[order(-dataIn$overall),] #sorts the data maybe
+review <- dataIn[dataIn$ >= 4.0 ] #should filter 4.0s or greater
+write.csv(review, file "Output.csv")
+}
+review <- dataIn[dataIn$ => 4.0 ] #should filter 4.0s or greater
+review <- dataIn[dataIn$ > 4.0 ] #should filter 4.0s or greater
+clear
+source('C:/Users/the_d/Desktop/R Data HW/RData.R')
+write.csv(review, file = "Output.csv") #idk how to print to console yet so print to file for now
+RData <- function() {
+dataIn <- read.csv("review.data") #idk if this even works
+dataIn <- dataIn[order(-dataIn$overall),] #sorts the data maybe
+review <- dataIn[dataIn$x >= 4.0 ] #should filter 4.0s or greater
+write.csv(review, file = "Output.csv") #idk how to print to console yet so print to file for now
+}
